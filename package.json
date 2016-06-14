@@ -1,0 +1,33 @@
+{
+  "name": "ease-generator",
+  "version": "1.0.0",
+  "description": "generate ease value",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "webpack": "^1.13.1"
+  },
+  "scripts": {
+    "start": "set NODE_ENV=development&&webpack --watch ./src/ease-generator.js ./dist/ease-generator.js",
+    "build": "npm run dev&&npm run min",
+    "dev": "set NODE_ENV=development&&webpack ./src/ease-generator.js ./dist/ease-generator.js",
+    "min": "set NODE_ENV=production&&webpack -p src/ease-generator.js dist/ease-generator.min.js",
+    "test": "node ./test/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/limi58/ease-generator.git"
+  },
+  "keywords": [
+    "ease"
+  ],
+  "author": "limi58",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/limi58/ease-generator/issues"
+  },
+  "homepage": "https://github.com/limi58/ease-generator#readme"
+}
